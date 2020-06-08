@@ -1,0 +1,35 @@
+
+.glider img{
+    width: 100%;
+}
+
+.dots{
+    background: red;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.glider-dot{
+    background-color: white;
+}
+
+.glider-dot:hover{
+    background-color: yellow;
+}
+
+.glider-dot.active{
+    color: #fcb10f;
+    background-color: #fcb10f !important;
+}
+
+.glider-next{
+    display: none;
+}
+
+@media screen and (max-width: 900px){
+    .dots{
+        margin-top: -5px;
+    }
+
+
+}

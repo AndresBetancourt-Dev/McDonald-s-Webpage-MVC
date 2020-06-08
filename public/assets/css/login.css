@@ -1,0 +1,102 @@
+@import url("../fonts/HelveticaBlack/stylesheet.css");
+
+@font-face{
+    src: url('../fonts/Muli/Muli-Medium.ttf');
+    font-family: 'Muli';
+}
+
+
+
+.login{
+    width: 100%;
+    height: 450px;
+    background: linear-gradient(to bottom, rgb(193, 32, 32), red);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 25px;
+}
+
+.login__title{
+    text-align: center;
+    color:white;
+    font-family: 'Helvetica Black';
+    font-size: 46px;
+}
+
+.login__container{
+    width: 100%;
+    height: 100%;
+    display: inherit;
+    background: transparent;
+}
+
+
+.login__form{
+    display: inherit;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    background: transparent;
+}
+
+
+
+label{
+    color: white; margin-top: 30px;
+    text-shadow: 2px 5px 10px rgba(0,0,0,0.9);
+    font-family: 'Muli';
+    margin-bottom: 10px;
+}
+
+input{
+    text-align: center;
+    padding: 5px;
+    background: transparent;
+    border: none;
+    width: 100%;
+    justify-self: center;
+    border: 2px #fdc82e solid;
+    font-family: 'Muli';
+    color: #fdc82e;
+}
+
+.login__register{
+    font-family: 'Muli',sans-serif;
+    text-align: center;
+    color: white;
+}
+
+.login__register a{
+    text-decoration: none;
+    color: #fdc82e;
+}
+
+::placeholder { 
+    font-family: 'Muli';
+    color: #fdc82e;
+}
+  
+:-ms-input-placeholder {
+    font-family: 'Muli';
+    color: #fdc82e;
+}
+  
+::-ms-input-placeholder { 
+    font-family: 'Muli';
+    color: #fdc82e;
+}
+
+
+.login__button{
+    background-color: #fdc82e;
+    color: white;   
+    border-radius: 5px;
+}
+
+.login__error{
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-family: 'Muli';
+}

@@ -1,0 +1,100 @@
+@import url("../fonts/HelveticaBlack/stylesheet.css");
+@import url('../css/header.css');
+@import url('../css/footer.css');
+
+body{
+    margin: 0;
+    font-family: 'Helvetica Black',sans-serif;
+    font-weight: bold;
+    color: white;
+}
+
+
+.branchesContainer{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 5px;
+    background-color: rgba(0,0,0,1);
+}
+
+
+.branchImageContainer{
+    position: relative;
+    width:100%;
+    height: 500px;
+    
+}
+
+.branchImageContainer img{
+    width: 100%;
+    height: 100%;
+}
+
+.branchImageContainer:hover .branchDescription{
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    right: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    display: grid;
+    padding-right: 25px;
+    transition: 2s;
+    background-color: rgba(0,0,0,.5);
+    text-align: right;
+}
+
+.branchImageContainer:hover .branchDescription span{
+    align-self: center;
+    justify-self: right;
+    display: grid;
+}
+
+
+
+.branchImageContainer:hover .branchDescription span span{
+    align-self: center;
+    justify-self: right;
+    display: grid;
+    font-size: 36px;
+}
+
+
+.branchDescription span{
+    display: none;
+}
+
+.branchDescription span span{
+    display: none;
+}
+
+
+@media screen and (max-width:1050px){
+    .branchImageContainer{
+
+        height: 350px;
+        
+    }
+
+    .branchImageContainer:hover .branchDescription span span{
+        font-size:26px;
+    }
+
+    .branchImageContainer:hover .branchDescription span{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:900px){
+    .branchesContainer{
+        padding-top: 114px;
+    }
+}
+
+
+@media screen and (max-width:850px){
+    .branchesContainer{
+        grid-template-columns: 1fr;
+    }
+}

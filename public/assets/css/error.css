@@ -1,0 +1,30 @@
+@font-face{
+    src: url('../fonts/Muli/Muli-Medium.ttf');
+    font-family: 'Muli';
+}
+
+
+.error{
+   width: 100%;
+   height: 400px;
+  background: linear-gradient(to bottom, rgb(193, 32, 32), red);
+  display: grid;
+}
+
+.error__container{
+    width: 80%;
+    height: 70%;
+    justify-self: center;
+    display: inherit;
+    align-self: center;
+    border: 2px solid #fcb10f;
+    border-radius: 20px;
+    background: linear-gradient(to bottom, rgb(193, 32, 32), red);
+}
+
+.error__text{
+    color: white;
+    text-align: center;
+    align-self: center;
+    font-family: 'Muli',sans-serif;
+}

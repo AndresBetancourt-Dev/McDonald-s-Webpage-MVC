@@ -1,0 +1,187 @@
+@import url("../fonts/HelveticaBlack/stylesheet.css");
+@import url('../css/header.css');
+@import url('../css/footer.css');
+
+body{
+    margin: 0;
+    background-color: black;
+}
+
+.food{
+    cursor: pointer;
+}
+
+.lineBeforeTitle{
+    border:5px solid red;
+}
+
+.foodTitle{
+    margin-top: 1px;
+    text-align: center;
+    font-size: 36px;
+    font-family: 'Helvetica Black',sans-serif;
+    color:white;
+    padding: 15px 0;
+    border: 5px solid red;
+    width: 100%;
+
+}
+
+.foodContainer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    position: relative;
+    width: 100%;
+    text-align: center;
+
+}
+
+.foodText{
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 300px;
+    background-color: rgba(0,0,0,0.5);
+
+    
+}
+
+.food:hover .foodText{
+    transition: 5s;
+    z-index: 5;
+}
+
+.foodText{
+    z-index: -1;
+}
+
+
+
+.foodTextDesc{
+    position: absolute;
+    color: white;
+    font-family: 'Helvetica Black';
+    top:100px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    font-size: 14px;
+}
+.foodDescription{
+    position: absolute;
+    color: white;
+    font-family: 'Helvetica Black';
+    top: 15px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    font-size: 36px;
+    width: 100%;
+    
+    height: 45px;
+}
+
+.foodPrice{
+    position: absolute;
+    color: white;
+    font-family: 'Helvetica Black';
+    top:200px;
+    right: 100px;
+    bottom: 0;
+    left:200px;
+    font-size: 16px;
+    background-color: blanchedalmond;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    display: grid;
+    align-self: center;
+    justify-self: center;
+    color:black;
+    width: 100px;
+    height: 20px;
+}
+
+
+.foodId{
+    position: absolute;
+    color: white;
+    font-family: 'Helvetica Black';
+    top:250px;
+    right: 100px;
+    bottom: 0;
+    left:200px;
+    font-size: 12px;
+ 
+    text-align: center;
+    display: grid;
+    align-self: center;
+    justify-self: center;
+    color:white;
+    width: 100px;
+    height: 20px;
+
+}
+
+.foodQuantity{
+    position: absolute;
+    color: white;
+    font-family: 'Helvetica Black';
+    top:270px;
+    right: 100px;
+    bottom: 0;
+    left:200px;
+    font-size: 12px;
+ 
+    text-align: center;
+    display: grid;
+    align-self: center;
+    justify-self: center;
+    color:white;
+    width: 100px;
+    height: 20px;
+
+}
+
+
+
+
+
+.food{
+    position: relative;
+    width: 100%;
+    max-height: 300px;
+    height: 600px;
+    border: 5px solid red;
+    background-color: black;
+}
+
+
+@media screen and (max-width:1250px){
+    .foodContainer{
+        grid-template-columns: repeat(2,1fr);
+    
+    }
+}
+
+@media screen and (max-width:900px){
+    .foodTitle{
+      
+        text-align: center;
+        font-size: 36px;
+        font-family: 'Helvetica Black',sans-serif;
+        color:white;
+        padding: 15px 0px;
+        border: 5px solid red;
+        width: 100%;
+    
+    }
+
+    .foodContainer{
+        grid-template-columns: 1fr;
+    
+    }
+}

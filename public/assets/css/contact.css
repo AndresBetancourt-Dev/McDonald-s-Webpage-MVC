@@ -1,0 +1,70 @@
+@import url("../fonts/HelveticaBlack/stylesheet.css");
+@import url('../css/header.css');
+@import url('../css/footer.css');
+
+body{
+    margin: 0;
+    font-family: 'Helvetica Black',sans-serif;
+    color: white;
+}
+
+.contactN{
+    width: 100%;
+    max-height: 900px;
+    display: grid;
+    position: relative;
+    height: 900px;
+}
+.contactImage{
+    width: 100%;
+    height: inherit;
+}
+
+
+.contactLabel{
+    font-size: 44px;
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+}
+
+.contactContainer{
+    position: absolute;
+    display: grid;
+    width: 100%;
+    height: inherit;
+}
+
+
+.contactForm{
+  align-self: center;
+  justify-self: center;
+}
+
+#contactInput{
+    width: 100%;
+    text-align: center;
+    font-family: 'Helvetica Black';
+    padding: 5px;
+    color:black;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+#contactButton{
+    width: 100%;
+    padding: 15px;
+   background-color: red;
+   color:#fdc82e;
+   font-family: 'Helvetica Black';
+   border:none;
+   border-radius: 5px;
+}
+
+
+
+@media screen and (max-width:750px){
+    .contactN{
+
+        height: 500px;
+    }
+}

@@ -1,0 +1,132 @@
+@import url("../fonts/NunitoSans/stylesheet.css");
+
+@font-face{
+    src: url('../fonts/Muli/Muli-Medium.ttf');
+    font-family: 'Muli';
+}
+
+.footer{
+    width: 100%;
+    background-color:red;
+    height: 200px;
+    color: #fcb10f;
+    font-family: 'Muli',sans-serif;
+    font-weight: bold;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: repeat(3,1fr);
+    box-shadow: -5px -5px 15px rgba(0,0,0,.5);
+    position: relative;
+}
+
+.social{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-wrap: wrap;
+    padding: 25px;
+}
+
+.socialNetworkLink{
+    width: 100px;
+    height: 100px;
+}
+
+.socialNetwork{
+    width: 100px;
+    height: 100px;
+    margin: 0 15px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+.socialNetwork:hover{
+    transition: 1.5s;
+    transform: scale(1.5,1.5);
+}
+
+.facebook{
+    background-color: white;
+    height: 100px;
+    width: 100px;
+    margin-left: 50px;
+}
+
+.socialNetworkImage{
+    width: inherit;
+    height: inherit;
+}
+
+.author span{
+    font-family: 'Muli',sans-serif;
+    position: relative;
+    left: 10px;
+}
+
+
+.socialNetwork:first-child{
+    margin-left: 15px;
+}
+
+
+.copyright{
+    width: 20px;
+    height: 20px;
+}
+
+.contact span{
+    display:block;
+    text-align: center;
+}
+
+@media screen and (max-width: 1300px){
+
+    
+.socialNetworkLink{
+    width: 70px;
+    height: 70px;
+}
+
+.facebook{
+    background-color: white;
+    height: 70px;
+    width: 70px;
+}
+
+}
+
+@media screen and (max-width: 1024px){
+    .socialNetwork{
+        width: 80px;
+        height: 80px;
+        margin: 0 10px;
+
+    }
+
+    .facebook{
+        height: 70px;
+        width: 70px;
+        
+    }
+}
+
+
+@media screen and (max-width: 768px){
+    .socialNetwork{
+        width: 50px;
+        height: 50px;
+        margin: 0 10px;
+
+    }
+
+    .socialNetworkLink{
+        width: 40px;
+        height: 40px;
+    }
+
+    .facebook{
+        height: 40px;
+        width: 40px;
+    }
+}
