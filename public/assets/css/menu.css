@@ -9,6 +9,8 @@ body{
 
 .food{
     cursor: pointer;
+    transition: 2s;
+    overflow: hidden;
 }
 
 .lineBeforeTitle{
@@ -24,7 +26,7 @@ body{
     padding: 15px 0;
     border: 5px solid red;
     width: 100%;
-
+    transition: 2s;
 }
 
 .foodContainer{
@@ -33,32 +35,26 @@ body{
     position: relative;
     width: 100%;
     text-align: center;
-
+    transition: 2s;
 }
 
 .foodText{
     position: absolute;
-    top:0;
     left: 0;
     right: 0;
     bottom: 0;
     width: 100%;
     height: 300px;
     background-color: rgba(0,0,0,0.5);
-
+    transition: 1.5s;
+    bottom: -100%;
     
 }
 
 .food:hover .foodText{
-    transition: 5s;
-    z-index: 5;
+   transition: 1.5s;
+   bottom: 0;
 }
-
-.foodText{
-    z-index: -1;
-}
-
-
 
 .foodTextDesc{
     position: absolute;
@@ -92,15 +88,16 @@ body{
     right: 100px;
     bottom: 0;
     left:200px;
-    font-size: 16px;
-    background-color: blanchedalmond;
+    font-size: 20px;
+    text-shadow: 3px 3px 15px rgba(255, 181, 8, 0.3);
+    background-color: rgb(243, 29, 29);
     padding: 10px;
     border-radius: 5px;
     text-align: center;
     display: grid;
     align-self: center;
     justify-self: center;
-    color:black;
+    color: #f8ba35;
     width: 100px;
     height: 20px;
 }

@@ -1,7 +1,5 @@
 <?php
 
-//include_once '../core/';
-
 class ListadoModel extends Model{
 
     public function __construct(){
@@ -24,6 +22,27 @@ class ListadoModel extends Model{
       }catch(PDOException $e){
           return [];
       }  
+    }
+
+
+    public function getProductData(){
+        $products = [];
+        try{
+            $query = $this->db->connect()->query("SELECT * FROM productos");
+            while($row = $query->fetch()){
+                $product = new Product();
+                $product->code = $row['cod_pro'];
+                $product->name = $row['nom_pro'];
+                $product->image = $row['img_pro'];
+                $product->price = $row['pre_pro'];
+                $product->existences = $row['exi_pro'];
+                $product->description = $row['desc_pro'];
+                array_push($products,$product);
+            }
+            return $products;
+        }catch(PDOException $e){
+            return [];
+        }  
     }
 
 }

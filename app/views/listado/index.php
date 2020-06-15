@@ -23,7 +23,10 @@ if(isset($_SESSION['user'])){
 <?php require_once '../app/views/header.php'; ?>
 
 <section class="list__container">
-<h1 class="list__title">Listado</h1>
+<div class="list__title">Listado</div>
+
+<div class="list__subtitle">Clientes</div>
+
 
 <table>
   <thead>
@@ -50,6 +53,31 @@ if(isset($_SESSION['user'])){
     <?php  } ?>
   </tbody>
 </table>
+
+<div class="list__subtitle">Productos</div>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <?php 
+    foreach($this->products as $products){
+      $product = new Product();
+      $product = $products;
+  
+    ?>
+    <tr>
+      <td><?php echo $product->name; ?></td>
+      <td><?php echo $product->description; ?></td>
+    </tr>
+    <?php  } ?>
+  </tbody>
+</table>
+
 
 
 </section>

@@ -151,11 +151,11 @@ input:nth-of-type(6){
 }
 
 .button__form{
+    box-shadow: 2px 5px 15px rgba(0,0,0,0.3);
     height: 50px;
-    box-shadow: 5px 5px 10px rgba(0,0,0,0.9);
-    font-family: 'Muli';
+    font-family: 'Helvetica Black';
     color: white;
-    text-shadow: 2px 5px 10px rgba(0,0,0,0.9);
+    text-shadow: 2px 5px 15px rgba(0,0,0,0.3);
     font-size: 20px;
     background-color:#fdc82e;
     border-radius: 7.5px;

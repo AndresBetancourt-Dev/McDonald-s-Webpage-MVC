@@ -10,6 +10,7 @@ require_once 'core/Model.php';
 require_once 'core/App.php';
 require_once 'controllers/CurrentUser.php';
 require_once 'core/Customer.php';
+require_once 'core/Product.php';
 
 $userSession = new UserSession();
 $app = new App();
